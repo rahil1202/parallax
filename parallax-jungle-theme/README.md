@@ -8,4 +8,4 @@ https://parallax-jungle-theme-rahil1202.netlify.app/
 ## Technologies 
 💻 HTML <br>
 💻 CSS  <br>
-💻 JavaScript
+
