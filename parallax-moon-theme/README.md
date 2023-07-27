@@ -3,6 +3,8 @@ I've crafted an immersive Parallax Scrolling Website, where elements move at dif
 
 ## Live Link-
 
+https://parallax-moon-theme-rahil1202.netlify.app
+
 ## Technologies-
 
 💻 HTML <br>
