@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Bree+Serif|Passion+One|Quicksand|Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header{
+    height: 45vh;
+    width: 100vw;
+    background: white;
+}
+.logo{
+    padding: 10vh 30vw 2vh 15vw ;
+}
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+}
+section:nth-child(13){
+    height: 150vh;
+}
+.parent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0, auto, auto, 0);
+}
+  
+.child{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+}
+
+.content{
+    position: absolute;
+    z-index: 100;
+    padding: 20px;
+}
+
+#video{
+    color: white;
+    width: 100%;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 4.7em;
+}
+#video p{
+    line-height: 1em;
+    word-spacing: 0.2em;
+    margin-bottom: 0.3em;
+}
+#play{
+    cursor: pointer;
+}
+
+
+
+.overlay{
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    transition: all 0.7s;
+}
+
+.popup{
+    position: relative;
+    background: wheat;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px 0px 20px 0px;
+}
+.close-bar{
+    /* background:linear-gradient(to bottom, #aaa, #ccc,#ddd, #aaa ); */
+    background-color: white;
+    padding: 10px;
+    text-align: right;
+    margin-bottom: 20px;
+}
+.close-icon{
+    display: inline-block;
+    border-radius: 5px;
+    background: red;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.close-icon:hover{
+    background: grey;
+}
+
+.player{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+#freext, #jersey, #nyc, #worldcup, #cardboardbox{
+    top: 15%;
+    left: 15%;
+    width: 35%;
+}
+#freext h1, #jersey h1, #nyc h1, #worldcup h1, #n7 h1, #cardboardbox h1, #soweto h1, #greenrubber h1{
+    color: #4f9427;
+    font-size: 4em;
+    font-weight: 0;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1em;
+    margin-bottom: 30px;
+}
+#freext h2, #jersey h2, #nyc h2, #worldcup h2, #n7 h2, #cardboardbox h2, #soweto h2, #greenrubber h2{
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+#freext p, #jersey p, #nyc p, #worldcup p, #n7 p, #cardboardbox p, #soweto p, #greenrubber p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    width: 70%;
+}
+#freext a, #nyc a, #worldcup a, #n7 a, #cardboardbox a, #soweto a, #greenrubber a{
+    text-decoration: none;
+    color: #333;
+    border-bottom: dashed black 1px;
+}
+#freext a:hover, #nyc a:hover, #worldcup a:hover, #n7 a:hover, #cardboardbox a:hover, #soweto a:hover, #greenrubber a:hover{
+    border-bottom: none;
+    color: black;
+}
+
+
+#n7, #soweto, #soweto, #greenrubber{
+    top: 15%;
+    right: 5%;
+    width: 35%;
+}
+
+
+.slider{
+    position: absolute;
+    top: 22%;
+    left: 15%;
+    width: 70%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.slides, .slides2{
+    position: absolute;
+    transition: top 0.2s;
+    top: 350px;
+    height: 350px;
+}
+.slides:nth-child(1), .slides2:nth-child(1){
+    top: 0;
+}
+
+.slides h1, .slides2 h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 5.5em;
+    line-height: 0.9em;
+    color: #4f9427;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.slides p, .slides2 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5em;
+    width: 65%;
+}
+
+.more, .more2{
+    position: absolute;
+    top: calc(22% + 380px);
+    left: 45%;
+    width: 140px;
+    height: 125px;
+    z-index: 100;
+    cursor: pointer;
+}
+#refresh{
+    transition: all 0.5s;
+}
+#more-img{
+    position: relative;
+    top: -52px;
+    left: -72px;
+}
+.more:hover #refresh{
+    transform: rotateZ(-180deg);
+}
+.more2:hover #refresh{
+    transform: rotateZ(-180deg);
+}
+
+
+.sm-logo{
+    height: 60px;
+    width: 60px;
+    background: url(../images/logo_end.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+.stats{
+    position: relative;
+    top: 40%;
+    left: 20%;
+    font-size: 1.1em;
+}
+.stats a{
+    text-decoration: none;
+    color: #d4d463;
+    border-bottom: dashed 1px #d4d463;
+}
+.scroll{
+    width: 2.3em;
+    display: inline-block;
+    line-height: 1.6em;
+    font-size: 5em;
+    font-family: 'Passion One', cursive;
+    position: relative;
+    top: 0.2em;
+    color: #444;
+}
+
+footer{
+    margin: 20px;
+    padding-left: 20%;
+    font-size: 14px;
+    font-weight: 0;
+}
+
+
+.fg{
+    z-index: 99;
+    position: fixed;
+    left: 20%;
+    transform: translateY(25%);
+    bottom: 0;
+}
+#fg2{
+    left: 43%;
+    transform: translateY(75%);
+}
+#fg3{
+    left: 10%;
+    transform: translateY(85%);
+}
+
+
+.line{
+    position: absolute;
+    height: 240px;
+    top: 0px;
+    left: 60px;
+    z-index: 1000;
+}
+
+
+/* **************************************************** */
+
+.nav-dots{
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.dot{
+    position: relative;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background-color: rgb(175, 175, 214);
+}
+.dot::before{
+    content: attr(data-content);
+    transition: all 1s;
+    position: absolute;
+    color: white;
+    left: 300%;
+    transform: translate(-100%,-25%);
+    background: green;
+    display: none;
+    white-space: nowrap;
+    padding: 2px 15px 4px 15px;
+}
+.dot::after{
+    content: '';
+    transition: all 1s;
+    position: absolute;
+    top: 0;
+    left: 300%;
+    height: 8px;
+    width: 8px;
+    background-color: green;
+    display: none;
+    transform-origin: center;
+    transform: translate(-50%,20%) rotateZ(45deg);
+}
+.dot-container{
+    padding: 3px 1px;
+}
+
+.dot-container:hover .dot{
+    background-color: yellow;
+}
+.dot-container:hover .dot::before, .dot-container:hover .dot::after{
+    display: block;
+    left: -100%;
+}
+
+
+/* ================================================================================================================ */
+
+@media(max-width: 1000px){
+    #freext, #jersey, #nyc, #worldcup, #cardboardbox, #n7, #soweto, #soweto, #greenrubber {
+        width: 100%;
+        left: 15%;
+        right: 10%;
+    }
+    .nav-dots{
+        display: none;
+    }
+}
+
+@media(max-width: 1250px){
+    .slides h1, .slides2 h1{
+        font-size: 4em;
+    }
+    .sm-logo{
+        left: 10%;
+    }
+    .stats{
+        left: 10%;
+        width: 80%;
+    }
+}
+@media(max-width: 905px){
+    .slides h1, .slides2 h1{
+        font-size: 3em;
+    }
+    .more, .more2{
+        left: 40%;
+    }
+    .player{
+        width: 95%;
+    }
+}
+@media(max-width: 640px){
+    .slides h1, .slides2 h1{
+        font-size: 2.3em;
+    }
+    .slides p, .slides2 p{
+        width: auto;
+        font-size: 0.8em;
+    }
+    .line{
+        display: none;
+    }
+}
