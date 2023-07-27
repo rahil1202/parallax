@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website | Jungle Theme</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <a href="#" class="logo">Jungle</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+
+        </ul>
+    </header>
+
+    <section>
+        <h2 id="text"><span>It's Time For A New</span><br>Adventure</h2>
+        <img src="img/bird1.png" id="bird1" alt="">
+        <img src="img/bird2.png" id="bird2" alt="">
+        <img src="img/forest.png" id="forest" alt="">
+        <a href="#" id="btn">Explore</a>
+        <img src="img/rocks.png" id="rocks" alt="">
+        <img src="img/water.png" id="water" alt="">
+    </section>
+    <div class="sec">
+        <h2>Parallax Scrolling Effect</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit dapibus ornare in nascetur, convallis sodales
+            torquent leo.
+            Rutrum at odio felis rhoncus eleifend phasellus sollicitudin, potenti hendrerit tristique donec nam nunc ut,
+            ullamcorper lacus lacinia mollis feugiat posuere. Cubilia facilisi scelerisque varius iaculis rutrum laoreet
+            taciti id elementum dapibus, aptent in magna aliquet fermentum platea duis ut proin tellus, nisi leo dictum
+            hac
+            sollicitudin torquent ridiculus felis odio. <br> <br> Magna gravida aliquet mauris venenatis dui vestibulum
+            luctus
+            augue iaculis lobortis ultricies ridiculus lectus,
+            tristique porttitor eros potenti sed erat magnis dignissim at sociosqu sapien dis. Venenatis sagittis
+            habitasse
+            sociosqu nulla nullam aliquet eu vulputate, aptent augue lacus odio ad lectus parturient sociis malesuada,
+            semper faucibus montes facilisis nostra in blandit. Sollicitudin habitasse aliquet feugiat lacus ornare
+            primis
+            ad tempor, etiam vestibulum tortor quis vivamus arcu ut placerat viverra, taciti maecenas accumsan facilisi
+            curabitur volutpat lacinia. <br> <br>
+            Lorem ipsum dolor sit amet consectetur, adipiscing elit dapibus ornare in nascetur, convallis sodales
+            torquent
+            leo. Rutrum at odio felis rhoncus eleifend phasellus sollicitudin, potenti hendrerit tristique donec nam
+            nunc
+            ut, ullamcorper lacus lacinia mollis feugiat posuere. Cubilia facilisi scelerisque varius iaculis rutrum
+            laoreet
+            taciti id elementum dapibus, aptent in magna aliquet fermentum platea duis ut proin tellus, nisi leo dictum
+            hac
+            sollicitudin torquent ridiculus felis odio.Magna gravida aliquet mauris venenatis dui vestibulum luctus <br>
+            <br>
+            augue iaculis lobortis ultricies ridiculus lectus, tristique porttitor eros potenti sed erat magnis
+            dignissim
+            at sociosqu sapien dis. Venenatis sagittis habitasse sociosqu nulla nullam aliquet eu vulputate, aptent
+            augue
+            lacus odio ad lectus parturient sociis malesuada, semper faucibus montes facilisis nostra in blandit.
+            Sollicitudin habitasse aliquet feugiat lacus ornare primis ad tempor, etiam vestibulum tortor quis vivamus
+            arcu ut placerat viverra, taciti maecenas accumsan facilisi curabitur volutpat lacinia.
+        </p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text')
+        let bird1 = document.getElementById('bird1')
+        let bird2 = document.getElementById('bird2')
+        let btn = document.getElementById('btn')
+        let rocks = document.getElementById('rocks')
+        let forest = document.getElementById('forest')
+        let water = document.getElementById('water')
+        let header = document.getElementById('header')
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+
+</html>
