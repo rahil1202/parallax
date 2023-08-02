@@ -12,3 +12,6 @@ https://parallax-nike-theme-rahil1202.netlify.app
 💻 HTML <br>
 💻 CSS  <br>
 💻 JavaScript
+
+
+![Screenshot 2023-08-01 110514](https://github.com/rahil1202/parallax/assets/104057403/304d37bf-f7f7-4c2e-9cd5-cffbc783d195)
