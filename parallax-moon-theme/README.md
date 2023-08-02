@@ -11,3 +11,4 @@ https://parallax-moon-theme-rahil1202.netlify.app
 💻 CSS  <br>
 💻 JavaScript
 
+![Screenshot 2023-08-01 110252](https://github.com/rahil1202/parallax/assets/104057403/7bc796b7-f521-4d85-84a6-3949229ece4f)
