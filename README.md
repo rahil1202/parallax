@@ -6,9 +6,9 @@ Welcome to the GitHub repository of my Parallax Website Collection built using H
 
 ## 🌐 Live Demo
 
-Check out the live demo of the Parallax Website Moon theme ➡️ [Live Demo](https://parallax-moon-theme-rahil1202.netlify.app)
-Check out the live demo of the Parallax Website Nike theme ➡️ [Live Demo](https://parallax-nike-theme-rahil1202.netlify.app)
-Check out the live demo of the Parallax Website Jungle theme ➡️ [Live Demo](https://parallax-jungle-theme-rahil1202.netlify.app)
+Check out the live demo of the Parallax Website Moon theme ➡️ [Live Demo](https://parallax-moon-theme-rahil1202.netlify.app)</br>
+Check out the live demo of the Parallax Website Nike theme ➡️ [Live Demo](https://parallax-nike-theme-rahil1202.netlify.app)</br>
+Check out the live demo of the Parallax Website Jungle theme ➡️ [Live Demo](https://parallax-jungle-theme-rahil1202.netlify.app)</br>
 
 
 ## ScreenShots 
